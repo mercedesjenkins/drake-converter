@@ -24,6 +24,7 @@ $('#fahrenheit_to_celsius').on('click', function () {
 		fahrenheit = parseFloat(fahrenheit);
 		var celsius = (fahrenheit - 32) / 1.8;
 		$('#temperature').val(celsius + String.fromCharCode(176)+ "C");
+		$('.error-message').hide();	
 	}
 	console.log('fahrenheit', fahrenheit)
 	
